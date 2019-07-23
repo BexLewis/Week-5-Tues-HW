@@ -27,6 +27,26 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/Dev/img/chart.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Dev/img/chart.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/Dev/img/lightbulb.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Dev/img/lightbulb.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/Dev/img/slide_5.jpg": {
 		"ft": 16384,
 		"iS": 164020,
@@ -195,8 +215,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/Dev/scss/styles.css",
-		"oF": 0,
+		"oAP": "/Dev/css/styles.css",
+		"oF": 2,
 		"oS": 0,
 		"uL": 1
 		}

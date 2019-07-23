@@ -9,17 +9,6 @@
 	],
 "creatorBuild": "29156",
 "files": {
-	"/Assets/slide_5.jpg": {
-		"ft": 16384,
-		"iS": 164020,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/Assets/slide_5.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/Design/design.sketch": {
 		"cB": 0,
 		"ft": 8192,
@@ -37,6 +26,17 @@
 		"oAP": "/Dev/css/styles-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/Dev/img/slide_5.jpg": {
+		"ft": 16384,
+		"iS": 164020,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Dev/img/slide_5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/Dev/index.html": {
 		"cB": 0,
@@ -183,6 +183,71 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/Dev/scss/layout/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/Dev/scss/sections/_contact.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/Dev/scss/sections/_contact.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/Dev/scss/sections/_gallery.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/Dev/scss/sections/_gallery.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/Dev/scss/sections/_habitat.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/Dev/scss/sections/_habitat.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/Dev/scss/sections/_hero-1.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/Dev/scss/sections/_hero-1.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/Dev/scss/sections/_housing.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/Dev/scss/sections/_housing.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

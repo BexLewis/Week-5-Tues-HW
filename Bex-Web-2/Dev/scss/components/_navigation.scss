@@ -15,9 +15,15 @@ header {
 
     a:active,
     a:hover {
-        border-bottom: 4px solid $accents;
-        color:grey;
-        padding-bottom: 10px;
+
+        color:$white;
+
+        @include lg{
+            border-bottom: 4px solid $accents;
+            color:grey;
+            padding-bottom: 10px;
+        }
+
     }
     //Logo
     section:nth-child(2) {
@@ -33,11 +39,21 @@ header {
     }
 
 
+
     }
     //Navigation
     nav {
+        text-align: right;
+        padding: 10px 40px;
+        background-color: lightgrey;
+
+        @include lg{
+            padding: 0;
+        }
 
         ul {
+
+
             @include lg {
                 display: flex;
                 justify-content: flex-end;

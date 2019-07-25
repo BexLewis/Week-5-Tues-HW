@@ -1,3 +1,63 @@
 /* =============
     Footer
 ============= */
+footer{
+
+    background-color: $accents;
+    height: 147px;
+    display: grid;
+
+        text-align: center;
+        grid-template-areas:
+        "."
+        "subscribe"
+        " media"
+        ".";
+    p{
+        font-family: 'Open Sans', sans-serif;
+        font-weight:700;
+        font-size: rem-calc(16);
+        padding-top: 20px;
+        @include lg{
+        font-size: rem-calc(26);
+    }
+        grid-area:subscribe;
+
+        a:link,
+        a:visited {
+            color:$white;
+
+        }
+
+        a:active,
+        a:hover {
+
+            color:$black;
+        }
+
+    }
+
+    ul{
+
+        grid-area:media;
+        display: flex;
+        justify-content: center;
+        a:link,
+        a:visited {
+            color:$black;
+
+        }
+
+        a:active,
+        a:hover {
+
+            color:$white;
+        }
+li{
+    padding: 0 10px;
+    font-size: rem-calc(26);
+}
+
+
+    }
+}

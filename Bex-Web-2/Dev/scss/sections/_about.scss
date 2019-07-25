@@ -1,3 +1,119 @@
 /* =============
     About
 ============= */
+#about {
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1420px auto;
+        grid-template-areas:". cont .";
+    }
+    #xl-cont{
+    grid-area:cont;
+    padding-bottom: 51px;
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-areas:
+    "subhead"
+    "head"
+    "branding-1"
+    "branding-2";
+    @include lg{
+    grid-template-areas:
+    ". subhead subhead subhead ."
+    ". head head head ."
+    "branding-1 branding-1 . branding-2 branding-2";
+    grid-template-columns: repeat(1 5fr);
+}
+
+    h2 {
+        text-align: center;
+        grid-area: subhead;
+        margin-top: 80px;
+        font-weight:200;
+        font-size: rem-calc(30);
+        @include lg{
+            font-size: rem-calc(37);
+        }
+
+    }
+
+    h1 {
+
+        grid-area: head;
+        text-align: center;
+        font-size: rem-calc(40);
+        font-weight:700;
+        color:$accents;
+        padding-bottom: 60px;
+        @include lg{
+            font-size: rem-calc(57);
+            padding-bottom: 90px;
+        }
+
+    }
+
+    article {
+        line-height: rem-calc(37);
+        display: grid;
+        grid-template-areas:
+        "icon"
+        "title"
+        "copy";
+        padding: 50px 50px;
+        @include md{
+            padding:50px 150px;
+        }
+        @include lg{
+            padding: 0 117px;
+            grid-template-areas:
+            "iconTitle"
+            "copy";
+        }
+
+
+        div {
+            text-align: center;
+            @include lg{
+                grid-area: iconTitle;
+                display: flex;
+                align-items: center;
+            }
+
+            h3 {
+                grid-area:title;
+                font-size: rem-calc(27);
+                color: $accents;
+                text-align: center;
+                @include lg{
+                padding-left: 20px;
+                }
+
+            }
+
+            img {
+                text-align:center;
+                grid-area:icon;
+                height: 50px;
+            }
+        }
+
+        p {
+            font-size:rem-calc(20);
+            text-align:center;
+            grid-area: copy;
+            @include lg{
+                font-size: rem-calc(25);
+                text-align: left;
+            }
+        }
+    }
+
+    article:nth-child(3) {
+        grid-area: branding-1;
+    }
+
+    article:last-child {
+        grid-area: branding-2;
+    }
+}
+}

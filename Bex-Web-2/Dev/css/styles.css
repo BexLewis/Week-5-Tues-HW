@@ -360,10 +360,16 @@ textarea {
 header {
   font-size: 1.3125rem;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 500; }
+  font-weight: 500;
+  line-height: 1.75rem; }
   header a:link,
   header a:visited {
     color: #000; }
+  header a:active,
+  header a:hover {
+    border-bottom: 4px solid #01C2D3;
+    color: grey;
+    padding-bottom: 10px; }
   header section:nth-child(2) h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -371,25 +377,17 @@ header {
     color: #000; }
     header section:nth-child(2) h1 span {
       color: #01C2D3; }
-  @media (min-width: 990px) {
-    header section:nth-child(3) {
-      display: flex;
-      align-items: center;
-      padding-right: 37px; }
-      header section:nth-child(3) img {
-        padding-right: 10px; } }
-  @media (min-width: 990px) {
-    header nav ul {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      margin-top: 41px; } }
-  @media (min-width: 990px) {
-    header nav ul li {
-      padding-right: 37px; } }
-  @media (min-width: 990px) {
-    header nav ul li:last-child {
-      display: none; } }
+
+@media (min-width: 990px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 41px; } }
+
+@media (min-width: 990px) {
+  nav ul li {
+    padding-right: 37px; } }
 
 /* =============
     Header
@@ -401,7 +399,7 @@ header {
   @media (min-width: 990px) {
     header {
       grid-template-columns: 3fr;
-      grid-template-areas: "logo nav cart"; } }
+      grid-template-areas: "logo nav"; } }
   header section:nth-child(1) {
     grid-area: burg; }
     @media (min-width: 990px) {
@@ -410,8 +408,6 @@ header {
   header section:nth-child(2) {
     grid-area: logo;
     margin: 37px; }
-  header section:nth-child(3) {
-    grid-area: cart; }
   header nav {
     grid-area: nav;
     display: none; }
@@ -429,3 +425,23 @@ header {
 /* =============
     Hero
 ============= */
+#hero {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("../img/slide_5.jpg");
+  background-size: cover;
+  background-repeat: none;
+  display: flex;
+  grid-template-columns: 3fr; }
+  #hero h1 {
+    grid-area: lgh;
+    color: #fff;
+    font-weight: 700; }
+  #hero h2 {
+    grid-area: smh;
+    color: #01C2D3; }
+  @media (min-width: 990px) {
+    #hero {
+      height: 1200px; } }
+  @media (min-width: 1440px) {
+    #hero {
+      height: 1200px; } }

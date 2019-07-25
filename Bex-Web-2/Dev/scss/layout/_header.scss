@@ -1,3 +1,42 @@
 /* =============
     Header
 ============= */
+header{
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-areas:
+    "logo burg"
+    "nav nav";
+
+    @include lg{
+        grid-template-columns: 3fr;
+        grid-template-areas:
+        "logo nav cart";
+    }
+
+    section:nth-child(1){
+        grid-area:burg;
+        @include lg{
+            display: none;
+        }
+    }
+
+    section:nth-child(2){
+        grid-area:logo;
+        margin:37px;
+    }
+
+    section:nth-child(3){
+        grid-area:cart;
+
+    }
+
+    nav{
+        grid-area:nav;
+        display: none;
+        @include lg{
+            display: block !important;
+            background-color: $white;
+        }
+    }
+}

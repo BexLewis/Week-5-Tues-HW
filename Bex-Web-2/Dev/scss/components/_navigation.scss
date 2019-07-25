@@ -1,3 +1,69 @@
 /* =============
     Navigation
 ============= */
+header {
+    font-size: rem-calc(21);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+
+    a:link,
+    a:visited {
+        color:$black;
+    }
+
+    a:active,
+    a:hover {
+
+    }
+    //Logo
+    section:nth-child(2) {
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: rem-calc(32);
+            color: $black;
+            span {
+                color: $accents;
+            }
+        }
+    }
+
+    section:nth-child(3) {
+        @include lg{
+        display: flex;
+        align-items: center;
+        padding-right: 37px;
+        img{
+            padding-right: 10px;
+        }
+    }
+
+
+    }
+    //Navigation
+
+    nav {
+
+        ul {
+            @include lg {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-top: 41px;
+            }
+
+            li {
+                @include lg{
+                padding-right: 37px;
+            }
+            }
+
+            li:last-child {
+                @include lg {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}

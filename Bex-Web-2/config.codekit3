@@ -47,6 +47,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/Dev/img/shop.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Dev/img/shop.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/Dev/img/slide_5.jpg": {
 		"ft": 16384,
 		"iS": 164020,
@@ -65,6 +75,17 @@
 		"oA": 0,
 		"oAP": "/Dev/index.html",
 		"oF": 0
+		},
+	"/Dev/js/scripts-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/Dev/js/scripts-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/Dev/js/scripts.js": {
 		"bF": 0,

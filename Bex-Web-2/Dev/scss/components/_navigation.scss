@@ -2,77 +2,63 @@
     Navigation
 ============= */
 header {
-    font-size: rem-calc(21);
     font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(21);
     font-weight: 500;
     line-height: rem-calc(28);
 
     a:link,
     a:visited {
-        color:$black;
-
+        color: $black;
     }
 
     a:active,
     a:hover {
-
-        color:$white;
-
-        @include lg{
+        color: $white;
+        @include lg {
             border-bottom: 4px solid $accents;
-            color:grey;
+            color: grey;
             padding-bottom: 10px;
         }
-
     }
     //Logo
     section:nth-child(2) {
         h1 {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 700;
-            font-size: rem-calc(32);
             color: $black;
+            font-family: 'Open Sans', sans-serif;
+            font-size: rem-calc(32);
+            font-weight: 700;
+
             span {
                 color: $accents;
             }
         }
     }
+}
+//Navigation
 
-
-
+nav {
+    background-color: lightgrey;
+    padding: 10px 40px;
+    text-align: right;
+    @include lg {
+        padding: 0;
     }
-    //Navigation
-    nav {
-        text-align: right;
-        padding: 10px 40px;
-        background-color: lightgrey;
 
-        @include lg{
-            padding: 0;
+    ul {
+        @include lg {
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 41px;
         }
 
-        ul {
-
-
+        li {
             @include lg {
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                margin-top: 41px;
-            }
-
-            li {
-                @include lg{
                 padding-right: 37px;
-
-
-
             }
-            }
-            li:last-child{
+        }
 
-            }
-
-
+        li:last-child {}
     }
 }

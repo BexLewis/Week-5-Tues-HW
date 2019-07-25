@@ -358,8 +358,8 @@ textarea {
     Navigation
 ============= */
 header {
-  font-size: 1.3125rem;
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.3125rem;
   font-weight: 500;
   line-height: 1.75rem; }
   header a:link,
@@ -375,25 +375,25 @@ header {
         color: grey;
         padding-bottom: 10px; } }
   header section:nth-child(2) h1 {
+    color: #000;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
     font-size: 2rem;
-    color: #000; }
+    font-weight: 700; }
     header section:nth-child(2) h1 span {
       color: #01C2D3; }
 
 nav {
-  text-align: right;
+  background-color: lightgrey;
   padding: 10px 40px;
-  background-color: lightgrey; }
+  text-align: right; }
   @media (min-width: 1200px) {
     nav {
       padding: 0; } }
   @media (min-width: 1200px) {
     nav ul {
+      align-items: center;
       display: flex;
       justify-content: flex-end;
-      align-items: center;
       margin-top: 41px; } }
   @media (min-width: 1200px) {
     nav ul li {
@@ -483,74 +483,74 @@ footer {
 @media (min-width: 1420px) {
   #about {
     display: grid;
-    grid-template-columns: auto 1420px auto;
-    grid-template-areas: ". cont ."; } }
+    grid-template-areas: ". cont .";
+    grid-template-columns: auto 1420px auto; } }
 
 #about #xl-cont {
-  grid-area: cont;
-  padding-bottom: 51px;
-  font-family: 'Open Sans', sans-serif;
   display: grid;
-  grid-template-areas: "subhead" "head" "branding-1" "branding-2"; }
+  font-family: 'Open Sans', sans-serif;
+  grid-area: cont;
+  grid-template-areas: "subhead" "head" "branding-1" "branding-2";
+  padding-bottom: 51px; }
   @media (min-width: 1200px) {
     #about #xl-cont {
       grid-template-areas: ". subhead subhead subhead ." ". head head head ." "branding-1 branding-1 . branding-2 branding-2";
       grid-template-columns: repeat(1 5fr); } }
   #about #xl-cont h2 {
-    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 200;
     grid-area: subhead;
     margin-top: 80px;
-    font-weight: 200;
-    font-size: 1.875rem; }
+    text-align: center; }
     @media (min-width: 1200px) {
       #about #xl-cont h2 {
         font-size: 2.3125rem; } }
   #about #xl-cont h1 {
-    grid-area: head;
-    text-align: center;
+    color: #01C2D3;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #01C2D3;
-    padding-bottom: 60px; }
+    grid-area: head;
+    padding-bottom: 60px;
+    text-align: center; }
     @media (min-width: 1200px) {
       #about #xl-cont h1 {
         font-size: 3.5625rem;
         padding-bottom: 90px; } }
   #about #xl-cont article {
-    line-height: 2.3125rem;
     display: grid;
     grid-template-areas: "icon" "title" "copy";
-    padding: 50px 50px; }
+    line-height: 2.3125rem;
+    padding: 50px; }
     @media (min-width: 715px) {
       #about #xl-cont article {
         padding: 50px 150px; } }
     @media (min-width: 1200px) {
       #about #xl-cont article {
-        padding: 0 117px;
-        grid-template-areas: "iconTitle" "copy"; } }
+        grid-template-areas: "iconTitle" "copy";
+        padding: 0 117px; } }
     #about #xl-cont article div {
       text-align: center; }
       @media (min-width: 1200px) {
         #about #xl-cont article div {
-          grid-area: iconTitle;
+          align-items: center;
           display: flex;
-          align-items: center; } }
+          grid-area: iconTitle; } }
       #about #xl-cont article div h3 {
-        grid-area: title;
-        font-size: 1.6875rem;
         color: #01C2D3;
+        font-size: 1.6875rem;
+        grid-area: title;
         text-align: center; }
         @media (min-width: 1200px) {
           #about #xl-cont article div h3 {
             padding-left: 20px; } }
       #about #xl-cont article div img {
-        text-align: center;
         grid-area: icon;
-        height: 50px; }
+        height: 50px;
+        text-align: center; }
     #about #xl-cont article p {
       font-size: 1.25rem;
-      text-align: center;
-      grid-area: copy; }
+      grid-area: copy;
+      text-align: center; }
       @media (min-width: 1200px) {
         #about #xl-cont article p {
           font-size: 1.5625rem;
